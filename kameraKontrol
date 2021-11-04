@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class KameraKontrol : MonoBehaviour
+{
+public GameObject Sphere;
+Vector3 mesafe;
+
+void Start()
+{
+mesafe=transform.position – Sphere.transform.position;
+}
+
+void Update()
+{
+transform.position=Sphere.transform.position + mesafe;
+
+}
+}
